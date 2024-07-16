@@ -1,7 +1,7 @@
 const payLevels = {
     1.25: "Regular pay (1.25x)",
     1.5: "Weekend (1.5x)",
-    2.25: "Public Holiday (2.25x)"
+    2.5: "Public Holiday (2.5x)"
 }
 
 addShift();
