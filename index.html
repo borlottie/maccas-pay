@@ -8,14 +8,13 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <label for="hourlyrate">Base hourly rate:</label> <input type="number" name="hourlyrate">
+    <label for="hourlyrate">Base hourly rate:</label> <input type="number" name="hourlyrate" onchange="calculate()">
+    
     <div id="shiftContainer">
-        <div id="shift1">
-            <label for="hrs1">Hours worked</label> <input type="number" name="hrs1"><br>
-            <label for="mins1">Minutes worked</label> <input type="number" name="mins1"><br>
-            <input type="radio">
-        </div>
     </div>
-    <button>Add shift</button>
+
+    <p id="total">Total: $</p>
+
+    <button onclick="addShift()">Add shift</button>
   </body>
 </html>
