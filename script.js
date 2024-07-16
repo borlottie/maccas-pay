@@ -4,6 +4,8 @@ const payLevels = {
     2.25: "Public Holiday (2.25x)"
 }
 
+addShift();
+
 function calculate() {
     const baseRate = Number(document.getElementsByName("hourlyrate")[0].value)
     console.log(baseRate)
