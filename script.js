@@ -35,7 +35,7 @@ function calculate() {
 
     //make grand total
     const totalText = document.getElementById("total")
-    totalText.innerText = "Total: $"+total
+    totalText.innerText = "Total: $"+Math.round(total*100)/100
 }
 
 function addShift() {
