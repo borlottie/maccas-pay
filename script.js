@@ -89,11 +89,18 @@ function addShift() {
 
         thisShift.appendChild(label)
     }
-    
+    //subtotal
     const subtotal = document.createElement("p")
     subtotal.className = "subtotal"
     subtotal.innerText = "$"
     thisShift.appendChild(subtotal)
 
     shiftList.appendChild(thisShift)
+}
+
+function deleteShift() {
+    const shiftList = document.getElementById("shiftContainer");
+    const num = shiftList.childElementCount - 1
+    const thisShift = shiftList.children[num];
+    thisShift.remove()
 }
