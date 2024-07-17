@@ -103,4 +103,5 @@ function deleteShift() {
     const num = shiftList.childElementCount - 1
     const thisShift = shiftList.children[num];
     thisShift.remove()
+    calculate()
 }
